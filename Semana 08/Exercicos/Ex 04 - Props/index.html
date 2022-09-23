@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> O que são props de um componente no React?
+        Cite um exemplo de declaração de componente com suas props</title>
+  </head>
+  <body>
+    <p>
+        Conceitualmente, componentes são como funções JavaScript. Eles aceitam entradas arbitrárias (chamadas “props”) e retornam elementos React que descrevem o que deve aparecer na tela.
+
+        A maneira mais simples de definir um componente é escrever uma função JavaScript:
+
+        function Welcome(props) {
+            return <h1>Olá, {props.name}</h1>;
+          }
+
+          Essa função é um componente React válido porque aceita um único argumento de objeto “props” (que significa propriedades) com dados e retorna um elemento React. Nós chamamos esses componentes de “componentes de função” porque são literalmente funções JavaScript.
+
+Você também pode usar uma classe ES6 para definir um componente:
+         
+class Welcome extends React.Component {
+    render() {
+      return <h1>Olá, {this.props.name}</h1>;
+    }
+  }
+  Os dois componentes acima são equivalentes do ponto de vista do React.
+    </p>
+</body>
+</html>
